@@ -26,32 +26,29 @@ button {
     const warning = document.getElementById("warning")
     // Setting button event listener: +
     buttonPlus.addEventListener("click", function() {
-        // Get value of element h1
-        h1.innerText = parseInt(h1.innerText) + 1;
-        // let val = parseInt(h1.innerText);
-        // if (val > -1)
-        // {
-        //     warning.innerText = "";
-        // }
-        // h1.innerText = val + 1
+        //h1.innerText = parseInt(h1.innerText) + 1;
+        let val = parseInt(h1.innerText);
+        if (val > -1)
+        {
+            warning.innerText = "";
+        }
+        h1.innerText = val + 1
     })
 
     // Setting button event listener: +
     buttonMinus.addEventListener("click", function() {
-        h1.innerText = parseInt(h1.innerText) - 1;
-        // let val = parseInt(h1.innerText);
-        // if (val < 1) 
-        // {
-        //     val = 0;
-        //     warning.innerText = "Cannot go below Zero";
-        // }
-        // else
-        // {
-        //     h1.innerText = val - 1;
-        //     warning.innerText = "";
-        // }
-        // Get value of element h1
-        //h1.innerText = parseInt(h1.innerText) - 1
+        //h1.innerText = parseInt(h1.innerText) - 1;
+        let val = parseInt(h1.innerText);
+        if (val < 1) 
+        {
+            val = 0;
+            warning.innerText = "Cannot go below Zero";
+        }
+        else
+        {
+            h1.innerText = val - 1;
+            warning.innerText = "";
+        }
     })
    
 </script>
